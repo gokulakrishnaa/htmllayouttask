@@ -1,0 +1,124 @@
+.layout {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+.lay1 {
+  display: flex;
+  padding: 40px;
+  justify-content: space-around;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.layout > div {
+  height: 25rem;
+  width: 30rem;
+  background-color: hsl(244, 38%, 16%);
+}
+.left {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.txt {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 70px;
+  text-align: left;
+  border-spacing: 30px;
+}
+.para {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+  text-align: left;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.hlight {
+  color: hsl(277, 64%, 61%);
+}
+.right {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.layout > div:nth-child(1) {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+
+  font-weight: 700;
+  justify-content: center;
+}
+#image {
+  height: 25rem;
+  width: 30rem;
+  object-fit: cover;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.lay1 > div {
+  text-align: left;
+}
+
+@media (max-width: 750px) {
+  .layout {
+    background-color: white;
+    flex-direction: column-reverse;
+  }
+  #image {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .right {
+    position: absolute;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .left {
+    position: relative;
+    top: 390px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .txt {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    text-align: center;
+    border-spacing: 30px;
+  }
+  .para {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .lay1 {
+    display: block;
+    padding: 5px;
+    justify-content: space-around;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .lay1 > div {
+    text-align: center;
+    padding: 5px;
+  }
+}
